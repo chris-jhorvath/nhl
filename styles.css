@@ -14,11 +14,11 @@ body {
     padding-bottom: 25px;
 }
 
-h1 {
+#herobox h1 {
     text-align: center;
     padding-top: 25px;
 }
 
-h3 {
+#herobox h3 {
     text-align: center;
 }

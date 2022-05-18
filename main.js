@@ -31,4 +31,6 @@ function getCurrentSeason() {
     document.getElementById("currentseason").innerHTML = "Show current season standings here";
 }
 
-
+function printTeams() {
+    const teams = [allteams.json]
+}

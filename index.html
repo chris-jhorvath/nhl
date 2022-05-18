@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHL</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="navbar" id="navbar"><a href="#" onclick="login()">Login</a> | <a href="#" onclick="signup()">Sign up</a></div>
+    <div class="container" id="herobox">
+        <h1>NHL API Data</h1>
+    </div>
+
+    <div class="container" id="sharksinfo"></div>
+        <h3>Sharks Players</h3>
+        <button onclick="getRoster()">Get roster</button>
+    <div id="sharksplayers"></div>
+
+    <div class="container" id="stadiums">
+        <h4>NHL Stadiums</h4>
+        <p id="stadiumlist"></p>
+    </div>
+
+    
+    <h3>NHL Free Agents</h3>
+    <button onclick="getFreeAgents()">Get Free Agents</button>
+    <br><br>
+    <div id="freeagents"></div>
+    <br>
+    <h3>NHL Injured List</h3>
+    <button onclick="getInjured()">Get Injured List</button>
+    <br><br>
+    <div id="injuredlist"></div>
+    <br>
+    <h3>NHL Stadiums</h3>
+    <h5>Stadiums in the USA</h5>
+    <button onclick="getUsaStadiums()">Show US Stadiums</button>
+    <h5>Stadiums in Canada</h5>
+    <button onclick="getCanadaStadiums()">Show Stadiums in Canada</button>
+    <h5>Other Stadiums</h5>
+    <button onclick="getIntlStadiums()">Show International Stadiums</button>
+    <br><br>
+    <div id="stadiums"></div>
+    <br>
+    <h3>Current Season</h3>
+    <button onclick="getCurrentSeason()">Get Current Season Standings</button>
+    <br><br>
+    <div id="currentseason"></div>
+</body>
+</html>
